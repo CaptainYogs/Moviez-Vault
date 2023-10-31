@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+
+.h1 {
+    font-family: 'Croissant One', cursive;
+    color: #283618;
+    background-color: #dfac71;
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+body{
+    background-color: #fefae0;
+}
