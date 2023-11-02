@@ -15,5 +15,16 @@
 }
 
 body{
-    background-color: #fefae0;
+    background-color: #eae7d8;
+}
+
+.movie{
+    padding: 0px;
+    padding-block: 0px;
+    padding-inline: 0px;
+
+}
+
+.search-btn{
+    padding: 0px;
 }
