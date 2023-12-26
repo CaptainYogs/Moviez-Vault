@@ -18,14 +18,14 @@ function myScript1(){
             document.getElementById("error").style.display="block";
         }
         res.json().then((data) => {
-            if(screen.width<=991){
-                document.getElementById("footer").style.position="relative";
-            }
             if(data.Response=="False"){
                 document.getElementById("error").style.display="block";
                 document.getElementById("info-div").style.display="none";
             }
             else{
+                if(screen.width<=991){
+                    document.getElementById("footer").style.position="relative";
+                }
                 document.getElementById("info-div").style.display="block";
                 document.getElementById("error").style.display="none";
                 document.getElementById("mov-pstr").src=data.Poster;
