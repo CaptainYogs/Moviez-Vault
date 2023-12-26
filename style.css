@@ -1,30 +1,137 @@
 @import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&display=swap');
 
 .h1 {
     font-family: 'Croissant One', cursive;
     color: #283618;
     background-color: #dfac71;
     width: 100%;
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
+}
+
+.h4{
+    font-family: 'Croissant One', cursive;
+    color: rgb(0, 0, 0);
+    margin-top: 1%;
 }
 
 body{
     background-color: #eae7d8;
 }
 
-.movie{
-    padding: 0px;
-    padding-block: 0px;
-    padding-inline: 0px;
-
+.search-col{
+    width: fit-content;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+    margin-left: 0px;
 }
 
-.search-btn{
-    padding: 0px;
+#movie-inp{
+    width: 100%;
+}
+
+#movie-btn{
+    background-color: #dfac71;
+    color: #000000;
+    font-family: 'Inclusive Sans', sans-serif;
+    box-shadow: none;
+    border: none;
+}
+
+@media all and (min-width: 576px){
+    #movie-inp{
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    #movie-btn{
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+}
+
+@media all and (max-width: 575px){
+    #movie-inp{
+        margin: 5px;
+    }
+    #movie-btn{
+        margin: 5px;
+    }
+}
+
+.result{
+    margin: 1%;
+    font-family: 'Inclusive Sans', sans-serif;
+    font-size: large;
+}
+
+.movie-info{
+    display: none;
+}
+
+.text-title{
+    font-weight: bold;
+}
+
+#mov-pstr{
+    width: 100%;
+    height: 95%;
+}
+
+.info-row{
+    width: 100%;
+}
+
+.text-col{
+    width: max-content
+}
+
+.text-row{
+    margin-bottom: 3%;
+}
+
+.text-row p{
+    display: inline;
+}
+
+.error{
+    text-align: center;
+    margin-top: 10%;
+    display: none;
+}
+
+#err{
+    font-size: larger;
+    font-weight: bolder;
+    margin-right: 5px;
+}
+
+#face-emoji{
+    height: 40px;
+}
+
+.footer{
+    bottom: 0%;
+	--bs-bg-opacity: 1;
+    background-color: #dfac71;
+	text-align: center;
+    position: fixed;
+    width: 100%;
+}
+
+.linkk{
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+}
+
+.footer-text{
+	text-align: center;
+	color: rgb(0, 0, 0);
+	font-family: 'Inclusive Sans', sans-serif;
+    font-weight: bold;
+}
+
+.footer-img{
+	align-content: center;
+	width: 30px;
+    margin-bottom: 5px;
 }
